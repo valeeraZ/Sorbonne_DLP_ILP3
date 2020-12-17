@@ -40,6 +40,7 @@ TME7:
   script: >
     /home/dlp/run.sh -id TME7 -name TME7
     com.paracamplus.ilp3.ilp3tme7.interpreter.test.InterpreterTest
+    com.paracamplus.ilp3.ilp3tme7.compiler.test.CompilerTest
   artifacts:
     reports:
       junit: report.xml
