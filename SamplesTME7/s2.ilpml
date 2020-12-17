@@ -8,13 +8,15 @@ function f(nb, msg)(
 );
 
 let c1 = costart f(5,"A") in
-
-let i = 0 in
-    while i < 10 do(
-        print(i);
+let c2 = costart f(3,"B") in
+let c3 = costart f(7,"C") in
+let j = 0 in
+    while j < 10 do(
+        print(j);
 
         resume(c1);
+        resume(c2);
+        resume(c3);
 
-
-        i = i + 1
+        j = j + 1
     )
