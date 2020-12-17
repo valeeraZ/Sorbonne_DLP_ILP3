@@ -14,7 +14,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <setjmp.h>
-#include <sys/ucontext.h>
+#include <ucontext.h>
 
 /** Compatibility */
 #if !defined(__APPLE_CC__)
