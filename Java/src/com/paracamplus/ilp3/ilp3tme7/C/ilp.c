@@ -978,8 +978,8 @@ ILP_costart(void (*f)(), int argc, ...)
      ucontext_t* caller_ctx = ILP_MALLOC(sizeof(ucontext_t));
      ucontext_t* coroutine_ctx = ILP_MALLOC(sizeof(ucontext_t));
      ucontext_t* end_ctx = ILP_MALLOC(sizeof(ucontext_t));
-     char* coroutine_stk = ILP_MALLOC(sizeof(COROUTINE_STACK_SIZE));
-     char* end_stk = ILP_MALLOC(sizeof(COROUTINE_STACK_SIZE));
+     char* coroutine_stk = ILP_MALLOC(COROUTINE_STACK_SIZE);
+     char* end_stk = ILP_MALLOC(COROUTINE_STACK_SIZE);
      if ( !caller_ctx || !coroutine_ctx || !end_ctx || !coroutine_stk || !end_stk) {
           return ILP_die("Memory exhaustion");
      }
